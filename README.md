@@ -67,26 +67,37 @@ output_dir = "outputs",
 Running the App (Gradio)(If local):
 
 1. Open a terminal, navigate to the project directory.
+
 2. Run python social_media_script_gradio.py (or the appropriate filename).
+
 3. The Gradio interface will launch in your web browser, typically at
+
 http://127.0.0.1:7861.
+
 Running the App (Gradio)(If Colab):
+
 1. Run the selected gradio cell.
+
 2. Follow the given link to access the application.
+
 Evaluation:
+
 Evaluating the quality and relevance of generated scripts involves:
-● Human Evaluation: Experts assess scripts based on criteria like coherence,
-informativeness, and engagement.
+
+● Human Evaluation: Experts assess scripts based on criteria like coherence, informativeness, and engagement.
 ● ROUGE Score: Measures overlap between generated text and reference scripts
 (automated metric).
-Inference : Human Evaluation is executed with the application deployment.
-ROUGE Score is evaluated on the reference with the dataset.
+
+Inference : Human Evaluation is executed with the application deployment. ROUGE Score is evaluated on the reference with the dataset.
+
 Further Enhancements:
+
 ● Explore different pre-trained models and fine-tuning techniques for potentially
 better results.
+
 ● Implement functionalities to control generation style (e.g., formality, tone).
-● Integrate the model into a social media management platform for seamless
-workflow.
+
+● Integrate the model into a social media management platform for seamless workflow.
 
 https://github.com/S-U-R-Y-A-1/Microsoft-phi-3-fine-tuning/assets/126397104/81bf988c-6349-46ca-a6f0-5e2e3e9dae81
 
