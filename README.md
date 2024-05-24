@@ -10,31 +10,42 @@ Features:
 ● Offers user interface:
 
 ○ Gradio interface for a user-friendly web interface.
+
 Requirements:
+
 ● Python 3.7+
+
 ● Unsloth
+
 ● Accelerator
+
 ● Gradio (pip install gradio)
+
 ● Transformers (pip install transformers)
+
 Installation:
+
 1. Download the colab notebook.
 2. Install the required libraries.
-3. Download the microsoft-phi-3 model checkpoint and tokenizer files (or use
-your own model). Place them in a suitable directory (modify paths in the code if
+3. Download the microsoft-phi-3 model checkpoint and tokenizer files (or use your own model). Place them in a suitable directory (modify paths in the code if
 needed).
 4. Apply the LoRA adapters, with bias as “none” and stabilized script generation.
-5. From the dataset uploaded with addition of including topic labelling for better
-understanding of relationships between user input and script generation.
+5. From the dataset uploaded with addition of including topic labelling for better understanding of relationships between user input and script generation.
 6. Give the prompt template:
+   
 Below is a Topic for a social media post. Generate the script like
 given in the Hook,Build Up,Body.
 ### Topic:
 {}
 ### Script:
 {}
+
 7. Load the dataset which was uploaded in huggingface_hub:
+
 https://huggingface.co/datasets/Surya1523/data_man
+
 8. Train the model with specified parameters:
+
 args = TrainingArguments(
 per_device_train_batch_size = 2,
 gradient_accumulation_steps = 4,
@@ -50,8 +61,11 @@ lr_scheduler_type = "linear",
 seed = 3407,
 output_dir = "outputs",
 ),
+
 9. Test the model
+
 Running the App (Gradio)(If local):
+
 1. Open a terminal, navigate to the project directory.
 2. Run python social_media_script_gradio.py (or the appropriate filename).
 3. The Gradio interface will launch in your web browser, typically at
