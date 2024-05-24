@@ -1,10 +1,8 @@
 # Microsoft-phi-3-fine-tuning
 AI Social Media Script Generator with LoRA Fine-tuning
-This repository contains code for a web interface that leverages a LoRA fine-tuned
-model to generate creative social media post scripts.
+This repository contains code for a web interface that leverages a LoRA fine-tuned model to generate creative social media post scripts.
 Features:
-● Generates scripts based on a provided topic and optional details for Hook, Build
-Up, and Body sections.
+● Generates scripts based on a provided topic and optional details for Hook, Build Up, and Body sections.
 ● Uses the microsoft-phi-3 pre-trained model (replace with your own if desired).
 ● Offers user interface:
 ○ Gradio interface for a user-friendly web interface.
